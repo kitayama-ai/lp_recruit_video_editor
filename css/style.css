@@ -557,3 +557,35 @@ h3 {
         font-size: 1.2rem;
     }
 }
+/* Solution Section Styles */
+.solution-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.solution-line {
+    display: inline-block;
+}
+
+.solution-cross {
+    font-size: 0.5em;
+    vertical-align: middle;
+    color: var(--c-secondary);
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .solution-line {
+        display: block;
+        width: 100%;
+    }
+    .solution-cross {
+        display: block;
+        margin: 10px 0;
+        font-size: 1rem;
+        transform: rotate(0deg);
+    }
+}
+
